@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#120b18">
+  <title>Para Lizbeth ❤️</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="hearts" class="hearts" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <audio id="music" loop preload="auto">
+    <source src="musica/cancion.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="musicBtn" class="music-btn" aria-label="Activar música" aria-pressed="false">🔇</button>
+
+  <main>
+    <section id="inicio" class="screen active">
+      <div class="stars"></div>
+      <div class="intro-card">
+        <p class="eyebrow">Una pequeña sorpresa para ti</p>
+        <div class="heart-icon">♡</div>
+        <h1>Hola, mi <span>Corazón</span> ❤️</h1>
+        <p class="intro-text">Hay algo que preparé especialmente para ti...</p>
+        <button class="primary-btn" data-next="cumple">Abrir sorpresa ✨</button>
+      </div>
+    </section>
+
+    <section id="cumple" class="screen">
+      <div class="birthday-card">
+        <div class="cake-wrap">
+          <div class="cake">🎂</div>
+          <div class="cake-glow"></div>
+        </div>
+        <p class="eyebrow">02 de noviembre</p>
+        <h2>¡Feliz cumpleaños,<br><span>Lizbeth!</span> 🎉</h2>
+        <p>Hoy celebramos tus <strong>28 años</strong> y a la persona maravillosa que eres.</p>
+        <button class="primary-btn" data-next="historia">Continuar ❤️</button>
+      </div>
+    </section>
+
+    <section id="historia" class="screen">
+      <div class="section-card">
+        <p class="eyebrow">Nuestra historia</p>
+        <h2>Momentos que quiero guardar para siempre 📸</h2>
+        <p class="section-intro">Estas fotos son solo una pequeña parte de todo lo que hemos vivido juntos.</p>
+
+        <div class="gallery">
+          <figure class="photo-card">
+            <img src="imagenes/foto1.jpg" alt="Recuerdo 1 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>Un momento que guardo con cariño ❤️</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="imagenes/foto2.jpg" alt="Recuerdo 2 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>Nuestra primera salida ✨</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="imagenes/foto3.jpg" alt="Recuerdo 3 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>Porque cada recuerdo cuenta 🎂</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="imagenes/foto4.jpg" alt="Recuerdo 4 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>Los inicios de nuestra historia ✨</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="imagenes/foto5.jpg" alt="Recuerdo 5 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>Nuestra primera Navidad 😊</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="imagenes/foto6.jpg" alt="Recuerdo 6 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>Contigo, cualquier lugar es especial.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="imagenes/foto7.jpg" alt="Recuerdo 7 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>Pequeños momentos, grandes recuerdos.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="imagenes/foto8.jpg" alt="Recuerdo 8 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>Mi compañera de vida ❤️</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="imagenes/foto9.jpg" alt="Recuerdo 9 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>Un día para recordar siempre.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="imagenes/foto10.jpg" alt="Recuerdo 10 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>Juntos se disfruta más.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="imagenes/foto11.jpg" alt="Recuerdo 11 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>La felicidad está en compartirla contigo.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="imagenes/foto12.jpg" alt="Recuerdo 12 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>Un recuerdo que siempre me hará sonreír.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="imagenes/foto13.jpg" alt="Recuerdo 13 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>Nuestro camino, nuestra historia.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="imagenes/foto14.jpg" alt="Recuerdo 14 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>La persona que elegiría una y otra vez.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="imagenes/foto15.jpg" alt="Recuerdo 15 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>Abrazos que se sienten como hogar.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="imagenes/foto16.jpg" alt="Recuerdo 16 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>Un instante que se quedó en mi corazón.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="imagenes/foto17.jpg" alt="Recuerdo 17 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>Celebrando todo lo bonito que somos.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="imagenes/foto18.jpg" alt="Recuerdo 18 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>Que nunca nos falten motivos para reír.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="imagenes/foto19.jpg" alt="Recuerdo 19 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>Nuestro primer viaje juntos.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="imagenes/foto20.jpg" alt="Recuerdo 20 de Lizbeth" loading="lazy" onerror="this.hidden=true">
+            <figcaption>Y lo mejor todavía está por venir. 💖</figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-pagination" aria-label="Paginación de fotografías">
+          <button type="button" class="gallery-page-btn" id="galleryPrev" disabled>← Anteriores</button>
+          <span id="galleryPageInfo" aria-live="polite">Página 1 de 5 · Fotos 1–4 de 20</span>
+          <button type="button" class="gallery-page-btn" id="galleryNext">Siguientes →</button>
+        </div>
+
+        <button class="primary-btn" data-next="carta">Tengo algo que decirte 💌</button>
+      </div>
+    </section>
+
+    <section id="carta" class="screen">
+      <div class="letter">
+        <div class="letter-top">Para mi Corazón ❤️</div>
+        <p>Lizbeth,</p>
+        <p>Hoy quiero celebrar tus 28 años, pero sobre todo quiero celebrar que tengo la suerte de compartir mi vida contigo.</p>
+        <p>Han pasado <strong>2 años y 11 meses</strong> desde que comenzamos esta etapa juntos, y cuando pienso en todo lo que hemos vivido, hay un día que siempre voy a llevar conmigo: <strong>el día de nuestra boda</strong>.</p>
+        <p>Ese día fue especial no solo por todo lo que vivimos, sino porque fue el comienzo de una nueva parte de nuestra historia.</p>
+        <p>Una de las cosas que más amo de ti es <strong>tu personalidad</strong>. Esa forma tan tuya de ser, de hacer que incluso los momentos sencillos tengan algo especial. Quizá no siempre te lo digo, pero admiro mucho la persona que eres y todo lo que te hace ser tú.</p>
+        <p>Te amo por los momentos bonitos, pero también por todos esos días normales: nuestras pláticas, nuestras risas, nuestras ocurrencias y esos pequeños momentos que quizá parecen insignificantes, pero que para mí terminan siendo recuerdos que quiero conservar.</p>
+        <p>Deseo que este nuevo año de tu vida esté lleno de momentos que te hagan sonreír, sueños que podamos cumplir juntos y muchas historias nuevas que algún día podamos recordar.</p>
+        <p>Y si pudiera pedir un deseo para este cumpleaños, sería muy sencillo:</p>
+        <p class="wish"><em>seguir estando a tu lado para celebrar muchos cumpleaños más.</em> ❤️</p>
+        <p>Feliz cumpleaños, mi Corazón.</p>
+        <p>Gracias por ser tú, por compartir tu vida conmigo y por dejarme formar parte de la tuya.</p>
+        <p class="love">Te amo. ❤️</p>
+        <button class="primary-btn" data-next="regalo">Todavía falta algo... 🎁</button>
+      </div>
+    </section>
+
+    <section id="regalo" class="screen">
+      <div class="gift-section">
+        <p class="eyebrow">Una última sorpresa</p>
+        <h2>Corazón, todavía falta algo...</h2>
+        <p>Hay un regalo que no cabe dentro de esta caja.</p>
+
+        <button id="gift" class="gift" aria-label="Abrir regalo">
+          <span class="gift-lid"></span>
+          <span class="gift-box"></span>
+          <span class="gift-ribbon vertical"></span>
+          <span class="gift-ribbon horizontal"></span>
+          <span class="gift-bow">🎀</span>
+        </button>
+
+        <p class="tap-hint">Toca la caja para abrirla</p>
+
+        <div id="finalMessage" class="final-message">
+          <div class="final-heart">❤️</div>
+          <h2>Mi regalo favorito eres tú.</h2>
+          <p>Y mi deseo es seguir escribiendo nuestra historia contigo.</p>
+          <p class="signature">Feliz cumpleaños, Lizbeth.<br>Te amo, mi Corazón. ❤️</p>
+          <button id="restart" class="secondary-btn">Volver a vivir la sorpresa ↻</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
