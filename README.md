@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Cumpleaños de Lizbeth ❤️
 
 Proyecto independiente de la página de Quesos Tena.
@@ -36,3 +37,7 @@ Si el navegador bloquea la reproducción automática, la música se puede activa
 4. En **Build and deployment**, selecciona **Deploy from a branch**.
 5. Selecciona `main` y `/ (root)`.
 6. Guarda y espera a que GitHub publique el sitio.
+=======
+# cumple
+Cumpleaños
+>>>>>>> d43925e1323e2165956fde25cfa20443cd4bb224
